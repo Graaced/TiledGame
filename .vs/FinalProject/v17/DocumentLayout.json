@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|e:\\lezioni programmazione\\altro\\esercizi\\finalproject\\finalproject\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\finalproject\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TitleScene.cs",
+              "DocumentMoniker": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Scenes\\TitleScene.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Scenes\\TitleScene.cs",
+              "ToolTip": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Scenes\\TitleScene.cs",
+              "RelativeToolTip": "FinalProject\\Scenes\\TitleScene.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:50:14.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Game.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Game.cs",
+              "ToolTip": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Game.cs",
+              "RelativeToolTip": "FinalProject\\Game.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAQwGsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:44:06.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
+              "ToolTip": "E:\\Lezioni Programmazione\\ALTRO\\Esercizi\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:34:31.785Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

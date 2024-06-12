@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AB9217D-EA9C-4F93-A8D8-2970894B20CC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aiv-audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Audio.0.2.2\lib\net40\aiv-audio.dll</HintPath>
+    </Reference>
+    <Reference Include="aiv-fast2d, Version=1.0.7820.23607, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Fast2D.1.0.4\lib\net48\aiv-fast2d.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NVorbis.0.9.1\lib\net45\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.2.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.2\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Actor.cs" />
+    <Compile Include="Actors\Player.cs" />
+    <Compile Include="SceneObj\Key.cs" />
+    <Compile Include="Engine\CameraMngr.cs" />
+    <Compile Include="Engine\DrawMngr.cs" />
+    <Compile Include="Engine\GameObject.cs" />
+    <Compile Include="Engine\GfxMngr.cs" />
+    <Compile Include="Engine\GUI\ProgressBar.cs" />
+    <Compile Include="Engine\GUI\Text\Font.cs" />
+    <Compile Include="Engine\GUI\Text\FontMngr.cs" />
+    <Compile Include="Engine\GUI\Text\TextChar.cs" />
+    <Compile Include="Engine\GUI\Text\TextObject.cs" />
+    <Compile Include="Engine\Interfaces\IDrawable.cs" />
+    <Compile Include="Engine\Interfaces\IUpdatable.cs" />
+    <Compile Include="Engine\Physics\Colliders\BoxCollider.cs" />
+    <Compile Include="Engine\Physics\Colliders\CircleCollider.cs" />
+    <Compile Include="Engine\Physics\Colliders\Collider.cs" />
+    <Compile Include="Engine\Physics\Colliders\ColliderFactory.cs" />
+    <Compile Include="Engine\Physics\Colliders\CompoundCollider.cs" />
+    <Compile Include="Engine\Physics\Collision.cs" />
+    <Compile Include="Engine\Physics\PhysicsMngr.cs" />
+    <Compile Include="Engine\Physics\RigidBody.cs" />
+    <Compile Include="Engine\RandomGenerator.cs" />
+    <Compile Include="Engine\RandomTimer.cs" />
+    <Compile Include="Engine\UpdateMngr.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Managers\AudioMngr.cs" />
+    <Compile Include="Managers\DebugMngr.cs" />
+    <Compile Include="Managers\SceneManager.cs" />
+    <Compile Include="Managers\SpawnMngr.cs" />
+    <Compile Include="Pathfinding\Agent.cs" />
+    <Compile Include="Pathfinding\Map.cs" />
+    <Compile Include="Pathfinding\Node.cs" />
+    <Compile Include="Pathfinding\PriorityQueue.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\GameOverScene.cs" />
+    <Compile Include="Scenes\InsideScene.cs" />
+    <Compile Include="Scenes\PlayScene.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Scenes\TitleScene.cs" />
+    <Compile Include="Storage\Animation.cs" />
+    <Compile Include="Storage\AnimationStorage.cs" />
+    <Compile Include="Tiled\Tile.cs" />
+    <Compile Include="Tiled\TmxMap.cs" />
+    <Compile Include="Tiled\TmxObject.cs" />
+    <Compile Include="Tiled\TmxObjectLayer.cs" />
+    <Compile Include="Tiled\TmxTileLayer.cs" />
+    <Compile Include="Tiled\TmxTileObjectLayer.cs" />
+    <Compile Include="Tiled\TmxTileset.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Assets\Map\CityMap9.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Map\InsideMap7.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Map\PixelPackTOPDOWN8BIT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\MUSIC\adventure.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\MUSIC\MenuValid01.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Bg\gameOverBg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Bg\pressEnter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Bg\title2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Hero\HEROS_Idle_D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Hero\HEROS_Walk_D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Hero\HEROS_Walk_R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Hero\HEROS_Walk_U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\Key\01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
